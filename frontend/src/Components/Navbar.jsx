@@ -22,7 +22,8 @@ const Navbar = () => {
     ]
 
   return (
-    <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary">
+    <>
+    <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
             <div className="flex items-center space-x-14 pt-3">
                 <a href="/" className="text-2xl font-semibold flex items-center space-x-3 pl-4  text-primary"><img src={logo1} alt="logo1" className="w-10 inline-block items-center"/><span>NexPlan</span></a>
@@ -62,10 +63,11 @@ const Navbar = () => {
         </div>
       
     </nav>
+    
 
-    // navitem display for mobile divices
+    {/* // navitem display for mobile divices */}
 
-    <div className= {`space-y-4 px-4 pt-5 pb-5 bg-secondary ${isMenuOpen ? "block fixed top-0 right-0 left-0":"hidden" } `}>
+    <div className= {`space-y-4 px-4 pt-24 pb-5 bg-secondary ${isMenuOpen ? "block fixed top-0 right-0 left-0":"hidden" } `}>
     {
         navItems.map(({link, path})=>
         <a key={link} href={path} className="block hover:text-gray-300">{link}</a>
@@ -73,6 +75,7 @@ const Navbar = () => {
     }
 
     </div>
+    </>
   )
 }
 
