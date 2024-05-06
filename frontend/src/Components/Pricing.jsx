@@ -50,7 +50,7 @@ const Pricing = () => {
                     <h3 className="text-3xl font-bold text-center text-primary">{pkg.name}</h3>
                     <p className="text-tartiary text-center my-5">{pkg.description}</p>
                     <p className="text-4xl mt-5 text-center text-secondary font-bold">
-                        {isYearly ? `$${pkg.yearlyPrice}` : `$${pkg.monthlyPrice}`}<span className="text-base text-tartiary"> /{isYearly ? 'year':'month'}</span>
+                        {isYearly ? `LKR ${pkg.yearlyPrice}` : `LKR ${pkg.monthlyPrice}`}<span className="text-base text-tartiary"> /{isYearly ? 'year':'month'}</span>
                     </p>
                     <ul className="mt-5 space-y-2 px-4">
                         <li className="flex gap-3 items-center"><img src={pkg.green} alt="green dot" className="w-5 h-5"/>Videos of Lessons</li>
