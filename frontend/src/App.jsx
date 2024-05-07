@@ -1,6 +1,7 @@
 import './App.css'
 import About from './Components/About'
 import Features from './Components/Features'
+import Footer from './Components/Footer'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Newsletter from './Components/Newsletter'
@@ -17,6 +18,7 @@ function App() {
       <About/>
       <Pricing/>
       <Newsletter/>
+      <Footer/>
     </>
   )
 }

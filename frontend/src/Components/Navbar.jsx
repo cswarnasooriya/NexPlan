@@ -3,7 +3,7 @@ import logo1 from '../../public/logo2.png';
 import { IoLanguage } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseCircleOutline } from "react-icons/io5";
-
+import {Link} from 'react-scroll';
 
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
                 
                     {
                         navItems.map(({link,path})=> 
-                        <a key={link} href={path} className="block hover:text-gray-300">{link}</a>
+                        <Link spy={true} smooth={true} offset={-100} activeClass='active' key={link} to={path} className="block cursor-pointer hover:text-gray-300">{link}</Link>
                         )
                     }
 
@@ -70,7 +70,7 @@ const Navbar = () => {
     <div className= {`space-y-6 px-11 pt-24 pb-4 bg-secondary text-xl ${isMenuOpen ? "block fixed top-0 right-0 left-0":"hidden" } `}>
     {
         navItems.map(({link, path})=>
-        <a key={link} href={path} className="block hover:text-gray-300">{link}</a>
+        <Link key={link} to={path} spy={true} smooth={true} offset={-80} activeClass='active' className="block text-white hover:text-gray-300" onClick={toggleMenu}>{link}</Link>
         )
     }
 

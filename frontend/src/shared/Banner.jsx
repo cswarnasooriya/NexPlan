@@ -1,3 +1,7 @@
+// import {motion} from 'framer-motion';
+// import { fadeIn } from '../varients'; 
+
+
 const Banner = ({banner, heading, subheading, btn1, btn2}) => {
   return (
 
@@ -6,7 +10,12 @@ const Banner = ({banner, heading, subheading, btn1, btn2}) => {
 
                     {/* banner image */}
 
-                    <div>
+                    <div
+                    //  variants={fadeIn("down", 0.2)}
+                    //  initial="hidden"
+                    //  whileInView={"show"}
+                    //  viewport ={{once:false, amount:0.7}}   
+                    >
                         <img src={banner} alt="logo3" className="lg:h-[420px]" />
                     </div>
                 

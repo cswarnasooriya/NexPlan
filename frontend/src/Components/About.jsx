@@ -3,7 +3,7 @@ import about2 from '../../public/about2.png';
 
 const About = () => {
   return (
-    <div className="md:px-14 p-4 max-w-s mx-auto space-y-10">
+    <div className="md:px-14 p-4 max-w-s mx-auto space-y-10" id='about'>
         <div className="flex md:flex-row flex-col justify-between items-center gap-8">
             <div className="md:w-1/2">
                 <img src={about1} alt="about Image 1" />
